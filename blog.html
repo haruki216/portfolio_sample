@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>Blog - My Portfolio</title>
+        <meta name="description" content="技術ブログや日々の学習の記録" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/ress/dist/ress.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <div class="sub-cover cover-blog">
+            <header class="page-header wrapper">
+                <h1 class="align-center">
+                    <a href="index.html" class="logo-text font-english"
+                        >My Portfolio</a
+                    >
+                </h1>
+                <nav>
+                    <ul class="main-nav font-english">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="works.html">Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h2 class="page-title font-english">Blog</h2>
+        </div>
+
+        <main class="wrapper blog-contents">
+            <article class="post">
+                <header>
+                    <h2 class="post-title">プログラミング学習奮闘</h2>
+                    <div class="post-info">
+                        <time class="post-date" datetime="2026-05-13"
+                            >2026年5月13日</time
+                        >
+                    </div>
+                </header>
+                <img
+                    class="post-thumbnail"
+                    src="https://blog.miraiserver.ne.jp/wp-content/uploads/2024/05/%E5%B7%AE%E3%81%97%E6%9B%BF%E3%81%88%E7%94%A8-10%E6%B8%88.webp"
+                    alt="コーディング画面"
+                />
+                <h2>オブジェクト指向とは？</h2>
+
+<p>
+    研修の一環としてJavaを学習しました。
+    その中で「オブジェクト指向」という考え方が登場します。
+
+    オブジェクト指向はJavaだけの考え方ではなく、
+    多くのプログラミング言語で使われている重要な考え方です。
+
+    そして、多くの人が最初につまずきやすい部分でもあると思います。
+
+    そこで今回は、
+    オブジェクト指向についてあまり用語は使用せず、自分なりのイメージを交えながら
+    解説していこうと思います。
+</p>
+
+<p>
+    オブジェクト指向について調べると、
+
+    「システムを独立した“モノ（オブジェクト）”の集まりとして捉え、
+    それらを組み合わせてプログラムを構築する考え方」
+
+    と説明されることが多いです。
+</p>
+
+<p>
+    ただ、これだけではイメージしにくい人も多いと思います。
+
+    そこで、まずは「車」を例に考えてみます。
+</p>
+
+<p>
+    車には、
+
+    ・進む  
+    ・止まる  
+    ・曲がる  
+    ・ライトを光らせる  
+
+    など、さまざまな機能があります。
+
+    これらの機能が集まることで、
+    一つの「車」というものが成り立っています。
+</p>
+
+<p>
+    オブジェクト指向では、
+    このような一つ一つの機能や役割を
+    「部品」のように考えます。
+
+    そして、それらを組み合わせて
+    一つのシステムを作っていく考え方です。
+</p>
+<img src="./images/object2.jpg">
+<p>
+    他の例でいうと、
+    TwitterやInstagramなどのSNSも同じです。
+
+    投稿する機能、
+    保存する機能、
+    動画を見る機能、
+    いいねをする機能など、
+    多くの機能が集まって一つのサービスになっています。
+
+    オブジェクト指向は、
+    こういった機能を独立した部品として考え、
+    それらを組み合わせてシステムを作る考え方です。
+</p>
+
+<h2>オブジェクト指向のメリット</h2>
+
+<p>
+    では、なぜオブジェクト指向が使われているのでしょうか。
+
+    オブジェクト指向のメリットとして、
+    よく「再利用性」や「保守性」が挙げられます。
+</p>
+
+<h4>再利用性</h4>
+
+<p>
+    オブジェクト指向では、
+    機能を一つの部品として独立させます。
+
+    そのため、
+    一度作った機能を別の場所でも使い回しやすくなります。
+</p>
+
+<p>
+    例えば「保存機能」を考えてみます。
+
+    SNSでは、
+    投稿を保存する機能や、
+    お気に入りを管理する機能など、
+    似た仕組みがさまざまな場所で使われています。
+
+    このように、
+    一つの機能を複数の場所で再利用できることが
+    「再利用性」です。
+</p>
+
+<h4>保守性</h4>
+
+<p>
+    次に「保守性」です。
+
+    保守性とは、
+    コードの修正や変更がしやすいことを意味します。
+</p>
+
+<p>
+    一つのシステムには多くの機能があります。
+
+    もし機能同士が強く結びついていると、
+    一つを修正しただけで
+    他の部分にも影響が出てしまいます。
+</p>
+
+<p>
+    しかし、
+    オブジェクト指向では機能ごとに独立しているため、
+    修正する範囲を小さくしやすくなります。
+
+    その結果、
+    修正や機能追加がしやすくなり、
+    開発をスムーズに進めることができます。
+</p>
+
+<h2>まとめ</h2>
+
+<p>
+    オブジェクト指向は、
+    最初はイメージしづらく、
+    理解が難しい考え方だと思います。
+
+    ですが、
+    「機能を部品として考える」
+    というイメージを持てるようになると、
+    少しずつ理解しやすくなると思います。
+
+    私自身もまだ学習途中ですが、
+    イメージを持ちながら学ぶことで、
+    以前より理解しやすくなったと感じています。
+
+    オブジェクト指向は今後の学習でも重要になるので、
+    少しずつ理解を深めていきましょう。
+</p>
+                
+            </article>
+
+            <aside class="sidebar">
+                <h3 class="heading-medium font-english">Category</h3>
+                <ul class="side-menu">
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">SQL</a></li>
+                    <li><a href="#">HTML/CSS</a></li>
+                    <li><a href="#">Spring</a></li>
+                </ul>
+            </aside>
+        </main>
+
+        <footer class="page-footer">
+            <h3 class="heading-large font-english">Contact & Info</h3>
+            <table class="info">
+                <tr>
+                    <th>Email</th>
+                    <td>contact@example.com</td>
+                </tr>
+                <tr>
+                    <th>GitHub</th>
+                    <td><a href="https://github.com/">@your_github</a></td>
+                </tr>
+            </table>
+            <div class="copyright">
+                <small>&copy; 2026 My Portfolio</small>
+            </div>
+        </footer>
+    </body>
+</html>
