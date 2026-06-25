@@ -1,123 +1,204 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8" />
-        <title>My Portfolio</title>
-        <meta
-            name="description"
-            content="Webエンジニアのポートフォリオサイトです。スキルや制作実績を掲載しています。"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shared Shop Phase2 Portfolio</title>
+<style>
+:root{
+ --primary:#6c63ff;
+ --secondary:#00c2a8;
+ --bg:#f5f7fb;
+ --card:#ffffff;
+ --text:#1f2937;
+ --muted:#6b7280;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:"Segoe UI",sans-serif;background:var(--bg);color:var(--text);}
+header{
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:white;padding:100px 40px;text-align:center;
+}
+header h1{font-size:3rem;margin-bottom:15px;}
+header p{max-width:800px;margin:auto;line-height:1.8;}
+section{max-width:1200px;margin:auto;padding:70px 20px;}
+.section-title{text-align:center;font-size:2rem;margin-bottom:40px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
+.card{
+background:var(--card);
+border-radius:18px;
+padding:24px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+.card h3{margin-bottom:10px;color:var(--primary);}
+.card p{line-height:1.7;color:var(--muted);}
 
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/ress/dist/ress.min.css"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
-            rel="stylesheet"
-        />
-         <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    			/>
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
+.screen{
+background:white;border-radius:18px;overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+.noimage{
+height:220px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#eceff5;
+color:#9ca3af;
+font-size:2rem;
+font-weight:bold;
+}
+.caption{padding:18px;}
+.tech{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+}
+.badge{
+background:white;
+padding:10px 16px;
+border-radius:999px;
+box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+footer{
+text-align:center;
+padding:40px;
+background:#111827;
+color:white;
+}
+</style>
+</head>
+<body>
 
-    <body>
-		
-        <div class="cover cover-home">
-            <header class="page-header wrapper">
-                <h1 class="align-center">
-                    <a href="index.html" class="logo-text font-english"
-                        >My Portfolio</a
-                    >
-                </h1>
-                <nav>
-                    <ul class="main-nav font-english">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="works.html">Works</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <h2 class="page-title font-english">Hello, World.</h2>
-        </div>
-       
-        <section class="skills wrapper">
+<header>
+<h1>Shared Shop Phase 2</h1>
+<p>
+ECサイトをベースに、お気に入り機能・レビュー機能・閲覧履歴機能・ポイント機能・ルーレット機能・多言語対応を追加した拡張版Webアプリケーション。
+</p>
+</header>
 
-        <h3 class="heading-large font-english">
-            Skills
-        </h3>
-       
-        <div class="skill-list">
+<section>
+<h2 class="section-title">主な追加機能</h2>
+<div class="grid">
+<div class="card">
+<h3>⭐ お気に入り機能</h3>
+<p>ユーザーがお気に入り商品を登録・一覧表示できる機能。</p>
+</div>
 
-            <div class="skill-item">
-                <i class="fa-brands fa-java"></i>
-                <h4>Java</h4>
-                <p>
-                    オブジェクト指向、例外処理、
-                    コレクションなどを学習中です。
-                </p>
-            </div>
+<div class="card">
+<h3> セキュリティー面</h3>
+<p>連続ログイン失敗によるアカウントロック、一般会員と管理者の権限分離</p>
+</div>
 
-            <div class="skill-item">
-                <i class="fa-solid fa-database"></i>
-                <h4>SQL</h4>
-                <p>
-                    SELECT、JOIN、UPDATEなど
-                    基本的なSQLを学習しています。
-                </p>
-            </div>
 
-            <div class="skill-item">
-                <i class="fa-brands fa-html5"></i>
-                <h4>HTML / CSS</h4>
-                <p>
-                    レスポンシブ対応や
-                    ポートフォリオ制作を学習中です。
-                </p>
-            </div>
 
-        </div>
+<div class="card">
+<h3>📝 レビュー機能</h3>
+<p>購入商品に対してレビュー投稿を行い、商品評価を共有。</p>
+</div>
+<div class="card">
+<h3>👀 閲覧履歴機能</h3>
+<p>ユーザーが閲覧した商品の履歴を保存し再訪問をサポート。</p>
+</div>
+<div class="card">
+<h3> 会員称号付与機能</h3>
+<p>購入回数に応じて称号が付与され、称号によってポイントの付与率が変化する</p>
+</div>
 
-    </section>
 
-        <section class="about">
-            <h3 class="heading-large font-english">About Me</h3>
-            <p>2026年入社のエンジニアです。大学は経済学部です。
-				4月から学習を始めて現在、Java、SQL、HTMLなどを学習しています
-			</p>
-         
-             <p>
-             日頃から暗記ではなく、「なぜこのコードで動くのか」を理解しながら学習することを意識しています。
-        	 </p>
+<div class="card">
+<h3>💰 ポイント機能</h3>
+<p>ポイント付与・利用・QRコード連携によるポイント管理。</p>
+</div>
+<div class="card">
+<h3>🎰 ルーレット機能</h3>
+<p>ボーナスポイント獲得のためのエンターテインメント機能。</p>
+</div>
+<div class="card">
+<h3>🌐 多言語対応</h3>
+<p>LanguageControllerを利用した言語切替機能を実装。</p>
+</div>
+</div>
+</section>
 
-        	<p>なかなか時間を確保するのが難しいですが、隙間時間を活用して毎日コツコツ学習しています。
-				立派なエンジニアになれるよう頑張っていきたいと思います。
-        	</p>
-            <div class="align-center">
-                <a class="btn" href="./works.html">制作実績を見る</a>
-            </div>
-        </section>
+<section>
+<h2 class="section-title">画面一覧</h2>
+<div class="grid">
 
-        <footer class="page-footer">
-            <h3 class="heading-large font-english">Contact & Info</h3>
-            <table class="info">
-                <tr>
-                    <th>Email</th>
-                    <td>hmiyauch@cac.co.jp</td>
-                </tr>
-                <tr>
-                    <th>GitHub</th>
-                    <td><a href="https://github.com/haruki216">@your_github</a></td>
-                </tr>
-            </table>
-            <div class="copyright">
-                <small>&copy; 2026 My Portfolio</small>
-            </div>
-        </footer>
-    </body>
+<div class="screen">
+<div class="noimage">NO IMAGE</div>
+<div class="caption"><strong>商品一覧画面</strong><br>商品検索・閲覧</div>
+</div>
+
+<div class="screen">
+<img class="noimage"
+     src="./images/スクリーンショット 2026-06-25 143044.png"  alt="トップ画面">
+<div class="caption"><strong>商品詳細画面</strong><br>レビュー投稿・閲覧履歴登録</div>
+</div>
+
+<div class="screen">
+	<div class="noimage">
+		<img class="noimage" src="./images/スクリーンショット 2026-06-25 143044.png" alt="トップ画面">
+	</div>
+<div class="caption"><strong>お気に入り一覧</strong><br>登録済み商品を一覧表示</div>
+</div>
+
+<div class="screen">
+<video controls width="100%">
+        <source src="./video/shared_QR.mp4" type="video/mp4">
+<div class="caption"><strong>ポイント画面</strong><br>QRコードによるポイント利用</div>
+</div>
+
+<div class="screen">
+<video controls width="100%">
+        <source src="./video/shared_roulete.mp4" type="video/mp4">
+<div class="caption"><strong>ルーレット画面</strong><br>ボーナスポイント抽選機能</div>
+</div>
+
+<div class="screen">
+<video controls width="100%">
+        <source src="./video/購買流れ.mp4" type="video/mp4">
+<div class="caption"><strong>注文機能</strong><br>配送先入力・決済・注文確認</div>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">技術スタック</h2>
+<div class="tech">
+<span class="badge">Java</span>
+<span class="badge">Spring Boot</span>
+<span class="badge">Spring MVC</span>
+<span class="badge">Spring Data JPA</span>
+<span class="badge">Thymeleaf</span>
+<span class="badge">Oracle Database</span>
+<span class="badge">HTML/CSS</span>
+<span class="badge">JavaScript</span>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">フェーズ2の特徴</h2>
+<div class="grid">
+<div class="card">
+<h3>ユーザー体験向上</h3>
+<p>お気に入り・レビュー・閲覧履歴によってECサイトとしての利便性を向上。</p>
+</div>
+<div class="card">
+<h3>ゲーミフィケーション</h3>
+<p>ルーレットとポイント機能を組み合わせ、継続利用を促進。</p>
+</div>
+<div class="card">
+<h3>実践的な拡張開発</h3>
+<p>既存システムを保守しながら新機能追加を行う開発プロセスを経験。</p>
+</div>
+</div>
+</section>
+
+<footer>
+Shared Shop Phase2 Portfolio Page
+</footer>
+
+</body>
 </html>
