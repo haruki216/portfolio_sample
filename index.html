@@ -1,204 +1,557 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shared Shop Phase2 Portfolio</title>
-<style>
-:root{
- --primary:#6c63ff;
- --secondary:#00c2a8;
- --bg:#f5f7fb;
- --card:#ffffff;
- --text:#1f2937;
- --muted:#6b7280;
-}
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:"Segoe UI",sans-serif;background:var(--bg);color:var(--text);}
-header{
-background:linear-gradient(135deg,var(--primary),var(--secondary));
-color:white;padding:100px 40px;text-align:center;
-}
-header h1{font-size:3rem;margin-bottom:15px;}
-header p{max-width:800px;margin:auto;line-height:1.8;}
-section{max-width:1200px;margin:auto;padding:70px 20px;}
-.section-title{text-align:center;font-size:2rem;margin-bottom:40px;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
-.card{
-background:var(--card);
-border-radius:18px;
-padding:24px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-.card h3{margin-bottom:10px;color:var(--primary);}
-.card p{line-height:1.7;color:var(--muted);}
-
-.screen{
-background:white;border-radius:18px;overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-.noimage{
-height:220px;
-display:flex;
-align-items:center;
-justify-content:center;
-background:#eceff5;
-color:#9ca3af;
-font-size:2rem;
-font-weight:bold;
-}
-.caption{padding:18px;}
-.tech{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-justify-content:center;
-}
-.badge{
-background:white;
-padding:10px 16px;
-border-radius:999px;
-box-shadow:0 4px 10px rgba(0,0,0,.08);
-}
-footer{
-text-align:center;
-padding:40px;
-background:#111827;
-color:white;
-}
-</style>
-</head>
-<body>
-
-<header>
-<h1>Shared Shop Phase 2</h1>
-<p>
-ECサイトをベースに、お気に入り機能・レビュー機能・閲覧履歴機能・ポイント機能・ルーレット機能・多言語対応を追加した拡張版Webアプリケーション。
-</p>
-</header>
-
-<section>
-<h2 class="section-title">主な追加機能</h2>
-<div class="grid">
-<div class="card">
-<h3>⭐ お気に入り機能</h3>
-<p>ユーザーがお気に入り商品を登録・一覧表示できる機能。</p>
-</div>
-
-<div class="card">
-<h3> セキュリティー面</h3>
-<p>連続ログイン失敗によるアカウントロック、一般会員と管理者の権限分離</p>
-</div>
-
-
-
-<div class="card">
-<h3>📝 レビュー機能</h3>
-<p>購入商品に対してレビュー投稿を行い、商品評価を共有。</p>
-</div>
-<div class="card">
-<h3>👀 閲覧履歴機能</h3>
-<p>ユーザーが閲覧した商品の履歴を保存し再訪問をサポート。</p>
-</div>
-<div class="card">
-<h3> 会員称号付与機能</h3>
-<p>購入回数に応じて称号が付与され、称号によってポイントの付与率が変化する</p>
-</div>
-
-
-<div class="card">
-<h3>💰 ポイント機能</h3>
-<p>ポイント付与・利用・QRコード連携によるポイント管理。</p>
-</div>
-<div class="card">
-<h3>🎰 ルーレット機能</h3>
-<p>ボーナスポイント獲得のためのエンターテインメント機能。</p>
-</div>
-<div class="card">
-<h3>🌐 多言語対応</h3>
-<p>LanguageControllerを利用した言語切替機能を実装。</p>
-</div>
-</div>
-</section>
-
-<section>
-<h2 class="section-title">画面一覧</h2>
-<div class="grid">
-
-<div class="screen">
-<div class="noimage">NO IMAGE</div>
-<div class="caption"><strong>商品一覧画面</strong><br>商品検索・閲覧</div>
-</div>
-
-<div class="screen">
-<img class="noimage"
-     src="./images/スクリーンショット 2026-06-25 143044.png"  alt="トップ画面">
-<div class="caption"><strong>商品詳細画面</strong><br>レビュー投稿・閲覧履歴登録</div>
-</div>
-
-<div class="screen">
-	<div class="noimage">
-		<img class="noimage" src="./images/スクリーンショット 2026-06-25 143044.png" alt="トップ画面">
-	</div>
-<div class="caption"><strong>お気に入り一覧</strong><br>登録済み商品を一覧表示</div>
-</div>
-
-<div class="screen">
-<video controls width="100%">
-        <source src="./video/shared_QR.mp4" type="video/mp4">
-<div class="caption"><strong>ポイント画面</strong><br>QRコードによるポイント利用</div>
-</div>
-
-<div class="screen">
-<video controls width="100%">
-        <source src="./video/shared_roulete.mp4" type="video/mp4">
-<div class="caption"><strong>ルーレット画面</strong><br>ボーナスポイント抽選機能</div>
-</div>
-
-<div class="screen">
-<video controls width="100%">
-        <source src="./video/購買流れ.mp4" type="video/mp4">
-<div class="caption"><strong>注文機能</strong><br>配送先入力・決済・注文確認</div>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2 class="section-title">技術スタック</h2>
-<div class="tech">
-<span class="badge">Java</span>
-<span class="badge">Spring Boot</span>
-<span class="badge">Spring MVC</span>
-<span class="badge">Spring Data JPA</span>
-<span class="badge">Thymeleaf</span>
-<span class="badge">Oracle Database</span>
-<span class="badge">HTML/CSS</span>
-<span class="badge">JavaScript</span>
-</div>
-</section>
-
-<section>
-<h2 class="section-title">フェーズ2の特徴</h2>
-<div class="grid">
-<div class="card">
-<h3>ユーザー体験向上</h3>
-<p>お気に入り・レビュー・閲覧履歴によってECサイトとしての利便性を向上。</p>
-</div>
-<div class="card">
-<h3>ゲーミフィケーション</h3>
-<p>ルーレットとポイント機能を組み合わせ、継続利用を促進。</p>
-</div>
-<div class="card">
-<h3>実践的な拡張開発</h3>
-<p>既存システムを保守しながら新機能追加を行う開発プロセスを経験。</p>
-</div>
-</div>
-</section>
-
-<footer>
-Shared Shop Phase2 Portfolio Page
-</footer>
-
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Shared Shop Phase2 Portfolio</title>
+			<style>
+			:root{
+			 --primary:#6c63ff;
+			 --secondary:#00c2a8;
+			 --bg:#f5f7fb;
+			 --card:#ffffff;
+			 --text:#1f2937;
+			 --muted:#6b7280;
+			}
+			*{margin:0;padding:0;box-sizing:border-box;}
+			body{font-family:"Segoe UI",sans-serif;background:var(--bg);color:var(--text);}
+			header{
+			background:linear-gradient(135deg,var(--primary),var(--secondary));
+			color:white;padding:100px 40px;text-align:center;
+			}
+			header h1{font-size:3rem;margin-bottom:15px;}
+			header p{max-width:800px;margin:auto;line-height:1.8;}
+			section{max-width:1200px;margin:auto;padding:70px 20px;}
+			.section-title{text-align:center;font-size:2rem;margin-bottom:40px;}
+			.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
+			.card{
+			background:var(--card);
+			border-radius:18px;
+			padding:24px;
+			box-shadow:0 10px 25px rgba(0,0,0,.08);
+			}
+			.card h3{margin-bottom:10px;color:var(--primary);}
+			.card p{line-height:1.7;color:var(--muted);}
+			
+			.card,
+			.screen{
+			    transition:
+			        transform 0.3s ease,
+			        box-shadow 0.3s ease;
+			}
+			.noimage{
+			height:220px;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			background:#eceff5;
+			color:#9ca3af;
+			font-size:2rem;
+			font-weight:bold;
+			}
+			.caption{padding:18px;}
+			.tech{
+			display:flex;
+			flex-wrap:wrap;
+			gap:10px;
+			justify-content:center;
+			}
+			.badge{
+			background:white;
+			padding:10px 16px;
+			border-radius:999px;
+			box-shadow:0 4px 10px rgba(0,0,0,.08);
+			}
+			footer{
+			text-align:center;
+			padding:40px;
+			background:#111827;
+			color:white;
+			}
+			.fade{
+			    opacity:0;
+			    transform:translateY(40px);
+			    transition:all 0.8s ease;
+			}
+			
+			.fade.show{
+			    opacity:1;
+			    transform:translateY(0);
+			}
+			
+			.card:hover,
+			.screen:hover{
+			    transform: scale(1.15);
+			    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+			}
+			
+			.modal{
+			    display:none;
+			    position:fixed;
+			    z-index:9999;
+			    left:0;
+			    top:0;
+			    width:100%;
+			    height:100%;
+			    background:rgba(0,0,0,0.8);
+			}
+			
+			.modal-content{
+			    display:block;
+			    margin:auto;
+			    max-width:90%;
+			    max-height:90%;
+			    position:absolute;
+			    top:50%;
+			    left:50%;
+			    transform:translate(-50%,-50%);
+			    border-radius:10px;
+			}
+			.feature-modal{
+			    display:none;
+			    position:fixed;
+			    top:0;
+			    left:0;
+			    width:100%;
+			    height:100%;
+			    background:rgba(0,0,0,.7);
+			    z-index:10000;
+			}
+			
+			.feature-box{
+			    background:white;
+			    width:90%;
+			    max-width:700px;
+			    padding:30px;
+			    border-radius:20px;
+			    position:absolute;
+			    top:50%;
+			    left:50%;
+			    transform:translate(-50%,-50%);
+			}
+			
+			.feature-box h2{
+			    color:var(--primary);
+			    margin-bottom:20px;
+			}
+			
+			.close-btn{
+			    margin-top:20px;
+			    background:var(--primary);
+			    color:white;
+			    border:none;
+			    padding:10px 20px;
+			    border-radius:10px;
+			    cursor:pointer;
+			}
+			
+			#featureDescription{
+			line-height:1.9;
+			}
+			
+			#featureDescription h3{
+			color:var(--primary);
+			font-size:1.3rem;
+			margin:20px 0 10px;
+			}
+			
+			#featureDescription p{
+			margin-bottom:15px;
+			}
+			
+			#featureDescription ul{
+			margin:10px 0 15px 25px;
+			}
+			
+			#featureDescription li{
+			margin-bottom:8px;
+			}
+			
+			#featureDescription hr{
+			margin:20px 0;
+			border:none;
+			border-top:1px solid #ddd;
+			}
+			
+		</style>
+	</head>
+	
+	<script>
+		function openModal(img){
+		    document.getElementById("imageModal").style.display="block";
+		    document.getElementById("modalImage").src=img.src;
+		}
+		
+		function closeModal(){
+		    document.getElementById("imageModal").style.display="none";
+		}
+		
+		function showFeature(title, description){
+		
+		    document.getElementById("featureTitle").innerHTML = title;
+		    document.getElementById("featureDescription").innerHTML = description;
+		
+		    document.getElementById("featureModal").style.display = "block";
+		}
+		
+		function closeFeature(){
+		    document.getElementById("featureModal").style.display = "none";
+		}
+		
+	</script>
+	<body>
+	
+		<header>
+			<h1>Shared Shop Phase 2</h1>
+			<p>ECサイトをベースに、お気に入り機能・レビュー機能・閲覧履歴機能・ポイント機能・ルーレット機能・多言語対応を追加した拡張版Webアプリケーション。</p>
+		</header>
+	
+	<section>
+		<h2 class="section-title">主な追加機能</h2>
+		<div class="grid">
+		
+		<div class="card" onclick="showFeature('🔐 セキュリティ機能', `
+			<h3>アカウントロック機能</h3>
+			
+			<p>
+			ログイン失敗回数を監視し、5回連続で認証に失敗した場合はアカウントを30分ほどロックします。
+			</p>
+			
+			<p>
+			総当たり攻撃（ブルートフォースアタック）への対策として実装しました。
+			</p>
+			
+			<hr>
+			
+			<h3>権限管理機能</h3>
+			
+			<p>
+			一般会員・運用管理者・システム管理者の3つの権限を設け、利用できる機能を制限しています。
+			</p>
+			
+			<p>
+			Filterを利用して不正アクセスを防止しています。
+			</p>
+			`)">
+		<h3>🔐 セキュリティー面</h3>
+		<p>連続ログイン失敗によるアカウントロック、一般会員と管理者の権限分離</p>
+		</div>
+		
+		<div class="card" onclick="showFeature('🎨 デザイン改善', `
+				<h3>UIデザイン刷新</h3>
+				
+				<p>
+				フェーズ1で作成したECサイトの画面デザインを見直し、ユーザーが直感的に操作できるレイアウトへ改善しました。
+				</p>
+				`)">
+		<h3>🎨 デザイン面の改善</h3>
+		<p>ECサイトのデザインを変更</p>
+		</div>
+		
+		<div class="card" onclick="showFeature('⭐ お気に入り機能', `
+				<p>気になる商品をお気に入りとして登録できます。</p>
+				
+				<h3>機能</h3>
+				<ul>
+				<li>お気に入り商品の一覧表示</li>
+				<li>商品詳細画面から登録・解除</li>
+				<li>再訪問時の商品確認が容易</li>
+				</ul>
+				
+				<p>ユーザーの購入検討をサポートする機能です。</p>
+				`)">
+		<h3>⭐ お気に入り機能</h3>
+		<p>ユーザーがお気に入り商品を登録・一覧表示できる機能。</p>
+		</div>
+		
+		<div class="card" onclick="showFeature('🎯 レコメンド機能', `
+				<p>商品詳細画面で、現在閲覧している商品と同じカテゴリの商品を自動表示します。</p>
+				
+				<h3>効果</h3>
+				<ul>
+				<li>関連商品の発見</li>
+				<li>回遊率向上</li>
+				<li>購入機会の増加</li>
+				</ul>
+				`)">
+		<h3>🎯 レコメンド機能</h3>
+		<p>商品詳細ページに同じカテゴリー商品が表示される</p>
+		</div>
+		
+		<div class="card" onclick="showFeature('📝 レビュー機能', `
+				<p>購入した商品に対してレビューを投稿できます。</p>
+				
+				<h3>機能</h3>
+				<ul>
+				<li>評価コメント投稿（文章と星の数の両方で評価できる）</li>
+				<li>商品詳細画面でのレビュー表示</li>
+				<li>購入検討ユーザーへの情報提供</li>
+				</ul>
+				
+				<p>利用者同士で商品の評価を共有できます。</p>
+				`)">
+		<h3>📝 レビュー機能</h3>
+		<p>購入商品に対してレビュー投稿を行い、商品評価を共有。</p>
+		</div>
+		
+		<div class="card" onclick="showFeature('👀 閲覧履歴機能', `
+				<p>ユーザーが閲覧した商品を自動保存します。</p>
+				
+				<h3>利用メリット</h3>
+				<ul>
+				<li>以前見た商品を簡単に再確認</li>
+				<li>商品探しの手間を削減</li>
+				<li>購入検討商品の管理</li>
+				</ul>
+				`)">
+		<h3>👀 閲覧履歴機能</h3>
+		<p>ユーザーが閲覧した商品の履歴を保存し再訪問をサポート。</p>
+		</div>
+		
+		<div class="card" onclick="showFeature('🏆 会員称号機能', `
+				<p>購入回数に応じて会員ランクが上昇します。</p>
+				
+				<h3>ランク例</h3>
+				<ul>
+				<li>💎 VIPユーザー   (購買回数20以上,ポイント付与率1.5倍)</li>
+				<li>👑 買い物マスター(10回以上,ポイント付与率1.3倍)</li>
+				<li>🔥 お得意様      (5回以上,ポイント付与率1.2倍)</li>
+				<li>⭐ リピーター     (3回以上,ポイント付与率1.1倍)</li>
+				<li>🌱 はじめてのお客様</li>
+				</ul>
+				
+				<p>ランクが上がるほどポイント還元率が高くなり継続的な利用へつなげる。</p>
+				`)">
+		<h3>🏆 会員称号付与機能</h3>
+		<p>購入回数に応じて称号が付与され、称号によってポイントの付与率が変化する</p>
+		</div>
+		
+		
+		<div class="card" onclick="showFeature('💰 ポイント機能', `
+				<p>商品購入時にポイントを付与します。</p>
+				
+				<h3>機能</h3>
+				<ul>
+				<li>購入時ポイント獲得（100円で1ポイント付与）</li>
+				<li>ポイント利用による割引</li>
+				<li>保有ポイント管理</li>
+				</ul>
+				
+				<p>リピート購入を促進するための仕組みです。</p>
+				`)">
+		<h3>💰 ポイント機能</h3>
+		<p>ポイント付与・利用によるポイント管理。</p>
+		</div>
+		
+		<div class="card" onclick="showFeature('📱 QRコード機能', `
+				<p>QRコードを読み取ることで、1日1回ポイントを獲得できます。</p>
+				
+				<h3>特徴</h3>
+				<ul>
+				<li>1日1回、10ポイント付与</li>
+				<li>来店されたお客様をECサイトへの誘導</li>
+				<li>継続利用を促進</li>
+				</ul>
+				`)">
+		<h3>📱 QRコード機能</h3>
+		<p>QRコードを読み込むことで1日1回ポイントが付与される</p>
+		</div>
+		
+		<div class="card" onclick="showFeature('🎰 ルーレット機能', `
+				<p>1日1回挑戦できるルーレットでボーナスポイントを獲得できます。</p>
+				
+				<h3>特徴</h3>
+				<ul>
+				<li>1日1回利用可能</li>
+				<li>ログイン時に自動で表示</li>
+				<li>ランダム報酬(1～50ポイント付与される)</li>
+				<li>ユーザーの継続利用促進</li>
+				</ul>
+				
+				<p>ECサイト利用促進として実装	</p>
+				`)">
+				<h3>🎰 ルーレット機能</h3>
+				<p>ボーナスポイント獲得のためのエンターテインメント機能。1日1回ポイントが付与</p>
+				</div>
+		
+		<div class="card" onclick="showFeature('🌐 多言語対応機能', `
+				<p>サイト表示言語を切り替えることができます。</p>
+				
+				<h3>対応内容</h3>
+				<ul>
+				<li>日本語表示</li>
+				<li>英語表示</li>
+				<li>メッセージの国際化</li>
+				<li>LanguageControllerによる言語切替</li>
+				</ul>
+				
+				<p>グローバル展開を想定した設計となっています。</p>
+				`)">
+		<h3>🌐 多言語対応</h3>
+		<p>LanguageControllerを利用した言語切替機能を実装。</p>
+		</div>
+		
+		<div class="card" onclick="showFeature('🔮 運勢占い機能', `
+				<p>毎日の運勢とラッキーアイテムを表示します。</p>
+				
+				<h3>特徴</h3>
+				<ul>
+				<li>ユーザーごとの日替わり運勢表示</li>
+				<li>ラッキーアイテム表示</li>
+				<li>対象商品10%OFF</li>
+				</ul>
+				
+				<p>楽しみながら商品購入を促進するために実装しました。</p>
+				`)">
+		<h3>🔮 運勢占い</h3>
+		<p>運勢とラッキーアイテムが表示され、ラッキーアイテムは10％offになる</p>
+		</div>
+		
+		
+		<div class="card" onclick="showFeature('🛒 その他実装機能', `
+				<p>
+				ユーザーが快適に商品購入を行えるよう、ECサイトとしての利便性向上を目的とした機能追加を行いました。
+				</p>
+				
+				<h3>追加機能</h3>
+				
+				<ul>
+				<li>商品の複数個同時購入</li>
+				<li>配送日時指定機能</li>
+			
+				</ul>
+				
+				<h3>効果</h3>
+				
+				<ul>
+				<li>購入時の操作性向上</li>
+				<li>ユーザー満足度向上</li>
+				<li>実運用を意識したECサイト機能の実現</li>
+				</ul>
+				
+				<p>
+				実際のECサイトで利用される購入体験を意識して実装しました。
+				</p>
+				`)">
+		    <h3>🛒 ECサイト利便性向上</h3>
+		    <p>複数購入や配送日時指定など購入体験を改善</p>
+		</div>
+		
+		
+		</div>
+	</section>
+	
+	<section>
+		<h2 class="section-title">画面一覧</h2>
+		<div class="grid">
+		
+		<div class="screen">
+				<div class="noimage">
+				<img class="noimage" src="./images/画面一覧.png" onclick="openModal(this)" alt="トップ画面"></div>
+				<div class="caption"><strong>商品一覧画面</strong><br>商品検索・閲覧</div>
+		</div>
+		
+		<div class="screen">
+			<img class="noimage"
+			     src="./images/スクリーンショット 2026-06-25 143044.png"    onclick="openModal(this)" alt="トップ画面">
+			<div class="caption"><strong>商品詳細画面</strong><br>レビュー投稿・閲覧履歴登録</div>
+		</div>
+		
+		<div class="screen">
+			<img class="noimage"
+			     src="./images/ラッキー.png"   onclick="openModal(this)" alt="トップ画面">
+		<div class="caption"><strong>ラッキーアイテム表示</strong><br>運勢、ラッキーアイテム機能</div>
+		</div>
+		
+		<div class="screen">
+			<div class="noimage">
+				<img class="noimage" src="./images/フェイバリット.png" onclick="openModal(this)" alt="トップ画面">
+			</div>
+		<div class="caption"><strong>お気に入り一覧</strong><br>登録済み商品を一覧表示</div>
+		</div>
+		
+		
+		<div class="screen">
+		<video controls width="100%">
+		        <source src="./video/ログイン失敗.mp4" type="video/mp4">
+		</video>
+		<div class="caption"><strong>ログイン画面</strong><br>連続ログイン失敗によるアカウントロック</div>
+		</div>
+		
+		
+		<div class="screen">
+			<video controls width="100%">
+			        <source src="./video/shared_QR.mp4" type="video/mp4">
+			</video>
+		<div class="caption"><strong>ポイント画面</strong><br>QRコードによるポイント利用</div>
+		</div>
+		
+		<div class="screen">
+			<video controls width="100%">
+			        <source src="./video/shared_roulete.mp4" type="video/mp4">
+			</video>
+		<div class="caption"><strong>ルーレット画面</strong><br>ボーナスポイント抽選機能</div>
+		</div>
+		
+		<div class="screen">
+			<video controls width="100%">
+			        <source src="./video/購買流れ.mp4" type="video/mp4">
+			</video>
+		<div class="caption"><strong>注文機能</strong><br>配送先入力・決済・注文確認</div>
+		</div>
+		
+		</div>
+		</section>
+		
+		<section>
+		<h2 class="section-title">技術スタック</h2>
+			<div class="tech">
+			<span class="badge">Java</span>
+			<span class="badge">Spring Boot</span>
+			<span class="badge">Spring MVC</span>
+			<span class="badge">Spring Data JPA</span>
+			<span class="badge">Thymeleaf</span>
+			<span class="badge">Oracle Database</span>
+			<span class="badge">HTML/CSS</span>
+			<span class="badge">JavaScript</span>
+			</div>
+		</section>
+		
+		<section>
+			<h2 class="section-title">フェーズ2の特徴</h2>
+			<div class="grid">
+			<div class="card">
+			<h3>ユーザー体験向上</h3>
+			<p>お気に入り・レビュー・閲覧履歴によってECサイトとしての利便性を向上,それによるユーザーの継続的利用や新規利用へとつなげる
+			</p>
+			</div>
+				<div class="card">
+				<h3>ゲーミフィケーション</h3>
+				<p>ルーレットとポイント機能を組み合わせ、継続利用を促進。</p>
+				</div>
+			<div class="card">
+			<h3>実践的な拡張開発</h3>
+			<p>既存システムを保守しながら新機能追加を行う開発プロセスを経験。</p>
+			</div>
+			</div>
+		</section>
+		
+		<footer>
+		Shared Shop Phase2 Portfolio Page
+		</footer>
+		<div id="featureModal" class="feature-modal">
+		    <div class="feature-box">
+		        <h2 id="featureTitle"></h2>
+		        <div id="featureDescription"></div>
+		
+		        <button class="close-btn" onclick="closeFeature()">
+		            閉じる
+		        </button>
+		    </div>
+		</div>
+		
+		<div id="imageModal" class="modal" onclick="closeModal()">
+		    <img id="modalImage" class="modal-content">
+		</div>
+	</body>
 </html>
