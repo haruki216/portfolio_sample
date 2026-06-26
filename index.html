@@ -173,6 +173,46 @@
 			border-top:1px solid #ddd;
 			}
 			
+			@media (max-width: 768px){
+
+		    header{
+		        padding:60px 20px;
+		    }
+		
+		    header h1{
+		        font-size:2rem;
+		    }
+		
+		    .section-title{
+		        font-size:1.6rem;
+		    }
+		
+		    .grid{
+		        grid-template-columns:1fr;
+		    }
+		
+		    .card:hover,
+		    .screen:hover{
+		        transform:none;
+		    }
+		
+		    .feature-box{
+		        width:95%;
+		        max-height:85vh;
+		        overflow-y:auto;
+		    }
+		
+		    video{
+		        width:100%;
+		        height:auto;
+		    }
+		
+		    img{
+		        max-width:100%;
+		        height:auto;
+		    }
+		}
+			
 		</style>
 	</head>
 	
@@ -391,21 +431,22 @@
 		<p>LanguageControllerを利用した言語切替機能を実装。</p>
 		</div>
 		
-		<div class="card" onclick="showFeature('🔮 運勢占い機能', `
-				<p>毎日の運勢とラッキーアイテムを表示します。</p>
+<!--		<div class="card" onclick="showFeature('🔮 運勢占い機能', `-->
+<!--				<p>毎日の運勢とラッキーアイテムを表示します。</p>-->
 				
-				<h3>特徴</h3>
-				<ul>
-				<li>ユーザーごとの日替わり運勢表示</li>
-				<li>ラッキーアイテム表示</li>
-				<li>対象商品10%OFF</li>
-				</ul>
+<!--				<h3>特徴</h3>-->
+<!--				<ul>-->
+<!--				<li>ユーザーごとの日替わり運勢表示</li>-->
+<!--				<li>ラッキーアイテム表示</li>-->
+<!--				<li>対象商品10%OFF</li>-->
+<!--				</ul>-->
 				
-				<p>楽しみながら商品購入を促進するために実装しました。</p>
-				`)">
-		<h3>🔮 運勢占い</h3>
-		<p>運勢とラッキーアイテムが表示され、ラッキーアイテムは10％offになる</p>
-		</div>
+<!--				<p>楽しみながら商品購入を促進するために実装しました。()-->
+<!--				</p>-->
+<!--				`)">-->
+<!--		<h3>🔮 運勢占い</h3>-->
+<!--		<p>運勢とラッキーアイテムが表示され、ラッキーアイテムは10％offになる</p>-->
+<!--		</div>-->
 		
 		
 		<div class="card" onclick="showFeature('🛒 その他実装機能', `
@@ -441,6 +482,11 @@
 		</div>
 	</section>
 	
+	
+	
+	
+
+	
 	<section>
 		<h2 class="section-title">画面一覧</h2>
 		<div class="grid">
@@ -457,11 +503,11 @@
 			<div class="caption"><strong>商品詳細画面</strong><br>レビュー投稿・閲覧履歴登録</div>
 		</div>
 		
-		<div class="screen">
-			<img class="noimage"
-			     src="./images/ラッキー.png"   onclick="openModal(this)" alt="トップ画面">
-		<div class="caption"><strong>ラッキーアイテム表示</strong><br>運勢、ラッキーアイテム機能</div>
-		</div>
+<!--		<div class="screen">-->
+<!--			<img class="noimage"-->
+<!--			     src="./images/ラッキー.png"   onclick="openModal(this)" alt="トップ画面">-->
+<!--		<div class="caption"><strong>ラッキーアイテム表示</strong><br>運勢、ラッキーアイテム機能</div>-->
+<!--		</div>-->
 		
 		<div class="screen">
 			<div class="noimage">
